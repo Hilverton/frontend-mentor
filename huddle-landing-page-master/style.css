@@ -1,0 +1,124 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: white; }
+body{
+    margin: 0;
+    padding: 60px 80px 0 80px;
+    background-color: hsl(257, 40%, 49%);
+    color: white;
+    background-image: url("./images/bg-desktop.svg");
+    height: 100vh;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.imgs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 25%;
+    margin-bottom: 80px;
+}
+.illustration{
+    width: 95%;
+}
+.info{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    display: block;
+    flex: 1;
+}
+.textHead{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
+}
+h1{
+    font-size: 35px;
+}
+.textBody{
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+}
+button{
+    width: 200px;
+    height: 57px;
+    border-radius: 29px;
+    border: 0;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    font-size: 18px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+ul{
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style-type: none;
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 680px){
+    body{
+        padding: 30px 40px 0 40px;
+        background-image: url("./images/bg-mobile.svg");
+        background-repeat: no-repeat;
+    }
+    .logo{
+        width: 45%;
+        margin-bottom: 50px;
+    }
+    .illustration{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .info{
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .textHead{
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 20px;
+    }
+    h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .textBody{
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 25px;
+        text-align: center;
+        font-size: 12px;
+    }
+    button{
+        width: 170px;
+        height: 35px;
+        font-size: 13px;
+        align-self: center;
+        margin-bottom: 80px;
+    }
+    ul{
+        justify-content: center;
+    }
+    ul li{
+        width: 25px;
+        height: 25px;
+        padding: 1px;
+    }
+}

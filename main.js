@@ -8,6 +8,24 @@ const projects = [
     level: "JUNIOR",
     repo: "https://github.com/Hilverton/frontend-mentor/tree/main/advice-generator-app-main",
   },
+  {
+    alt: "Single price grid component image",
+    title: "Single price grid component",
+    description:
+      "Your challenge is to build out this pricing component and get it looking as close to the design as possible.",
+    path: "single-price-grid-component-master",
+    level: "NEWBIE",
+    repo: "https://github.com/Hilverton/frontend-mentor/tree/main/single-price-grid-component-master",
+  },
+  {
+    alt: "Huddle landing page image",
+    title: "Huddle landing page",
+    description:
+      "Your challenge is to build out this landing page from the designs provided in the starter code.",
+    path: "huddle-landing-page-master",
+    level: "NEWBIE",
+    repo: "https://github.com/Hilverton/frontend-mentor/tree/main/huddle-landing-page-master",
+  },
 ];
 
 const list = document.getElementById("list");
