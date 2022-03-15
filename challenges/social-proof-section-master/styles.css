@@ -1,0 +1,230 @@
+:root {
+    /*Primary*/
+    --very-dark-magenta    : hsl(300, 43%, 22%);
+    --soft-pink            : hsl(333, 80%, 67%);
+    /*Neutral*/
+    --dark-grayish-magenta : hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white                : hsl(0, 0%, 100%):
+}
+
+html,
+body {
+    box-sizing      : border-box;
+    font-family     : 'Spartan', sans-serif;
+    font-size       : 15px;
+    margin          : 0 auto;
+    width           : 95%;
+    background-color: var(--white);
+}
+
+body {
+    background: url(./images/bg-pattern-top-mobile.svg),
+        url(./images/bg-pattern-bottom-mobile.svg);
+    background-size    : contain;
+    background-repeat  : no-repeat, no-repeat;
+    background-position: top, right bottom;
+}
+
+.attribution {
+    font-size : 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.info {
+    margin-top   : 70px;
+    margin-bottom: 35px;
+}
+
+.info__title {
+    color     : var(--very-dark-magenta);
+    text-align: center;
+    font-size : 1.8rem;
+}
+
+.info__description {
+    color     : var(--dark-grayish-magenta);
+    text-align: center;
+    font-size : 0.8rem;
+}
+
+.rating {
+    width        : 100%;
+    margin-bottom: 50px;
+}
+
+.rating__item {
+    background-color: var(--light-grayish-magenta);
+    padding         : 10px 0;
+    margin-bottom   : 10px;
+    border-radius   : 8px;
+}
+
+.rating__item__stars {
+    text-align   : center;
+    margin-bottom: 10px;
+}
+
+.rating__item__info {
+    margin     : 0;
+    padding    : 0;
+    font-size  : 0.7rem;
+    font-weight: bold;
+    color      : var(--very-dark-magenta);
+    text-align : center;
+}
+
+.main {
+    margin-bottom: 100px;
+}
+
+.card {
+    width           : 100%;
+    background-color: var(--very-dark-magenta);
+    border-radius   : 8px;
+    padding         : 30px 0;
+    margin-bottom   : 15px;
+}
+
+.card__header {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    margin        : 0 30px;
+}
+
+.card__header__avatar {
+    width        : 35px;
+    height       : 35px;
+    border-radius: 100%;
+    margin-right : 20px;
+}
+
+.card__header__info {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+.card__header__name {
+    margin     : 0 0 3px 0;
+    font-size  : 0.7rem;
+    font-weight: bold;
+    color      : var(--light-grayish-magenta);
+}
+
+.card__header__job {
+    margin     : 0;
+    font-size  : 0.7rem;
+    font-weight: normal;
+    color      : var(--soft-pink);
+}
+
+.card__body {
+    margin: 15px 30px 0 30px;
+}
+
+.card__body__content {
+    margin     : 0;
+    color      : var(--light-grayish-magenta);
+    font-size  : 0.7rem;
+    line-height: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    body {
+        background: url(./images/bg-pattern-top-desktop.svg),
+            url(./images/bg-pattern-bottom-desktop.svg);
+        background-size    : auto, auto;
+        background-repeat  : no-repeat, no-repeat;
+        background-position: left top, right bottom;
+        width              : 80%;
+    }
+
+    main {
+        display    : flex;
+        align-items: center;
+        padding    : 0;
+        margin     : 150px 0 50px;
+    }
+
+    .info,
+    .rating {
+        width          : 50%;
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+    }
+
+    .info {
+        margin: 0;
+    }
+
+    .info__title {
+        text-align: start;
+        max-width : 350px;
+        margin    : 0 0 15px 0;
+        font-size : 2.5rem
+    }
+
+    .info__description {
+        text-align: start;
+        max-width : 380px;
+        margin    : 0;
+        line-height: 20px;
+    }
+
+    .main {
+        display        : flex;
+        flex-direction : row;
+        justify-content: space-between;
+    }
+
+    .rating {
+        margin-bottom: 0;
+    }
+
+    .rating__item {
+        display    : flex;
+        align-items: center;
+        width      : 70%;
+    }
+
+    .rating__item--1 {
+        margin-left: 0;
+    }
+
+    .rating__item--2 {
+        margin-left: 40px;
+    }
+
+    .rating__item--3 {
+        margin-left: 80px;
+    }
+
+    .rating__item__stars {
+        margin: 0 20px;
+    }
+
+    .card {
+        max-width : 320px;
+        max-height: 120px;
+    }
+
+    .card--1 {
+        margin-top: 0;
+    }
+
+    .card--2 {
+        margin-top: 20px;
+    }
+
+    .card--3 {
+        margin-top: 40px;
+    }
+
+}

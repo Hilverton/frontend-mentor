@@ -26,6 +26,24 @@ const projects = [
     level: "NEWBIE",
     repo: "https://github.com/Hilverton/frontend-mentor/tree/main/challenges/huddle-landing-page-master",
   },
+  {
+    alt: "Social proof section image",
+    title: "Social proof section",
+    description:
+      "Your challenge is to build out this social proof section and get it looking as close to the design as possible.",
+    path: "social-proof-section-master",
+    level: "NEWBIE",
+    repo: "https://github.com/Hilverton/frontend-mentor/tree/main/challenges/social-proof-section-master",
+  },
+  {
+    alt: "Four card feature section image",
+    title: "Four card feature section",
+    description:
+      "Your challenge is to build out this feature section and get it looking as close to the design as possible.",
+    path: "four-card-feature-section-master",
+    level: "NEWBIE",
+    repo: "https://github.com/Hilverton/frontend-mentor/tree/main/challenges/four-card-feature-section-master",
+  },
 ];
 
 const list = document.getElementById("list");
@@ -53,7 +71,7 @@ projects.forEach((project) => {
           ${project.title}
         </h1>
         <p class="leading-relaxed">
-          Your challenge is to build out this advice generator app using the Advice Slip API and get it looking as close to the design as possible.
+          ${project.description}
         </p>
         <div class="flex items-center flex-wrap pt-2">
           <a
