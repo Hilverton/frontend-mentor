@@ -6,7 +6,7 @@ const projects = [
       "Your challenge is to build out this advice generator app using the Advice Slip API and get it looking as close to the design as possible.",
     path: "advice-generator-app-main",
     level: "JUNIOR",
-    repo: "https://github.com/Hilverton/frontend-mentor/tree/main/advice-generator-app-main",
+    repo: "https://github.com/Hilverton/frontend-mentor/tree/main/challenges/advice-generator-app-main",
   },
   {
     alt: "Single price grid component image",
@@ -15,7 +15,7 @@ const projects = [
       "Your challenge is to build out this pricing component and get it looking as close to the design as possible.",
     path: "single-price-grid-component-master",
     level: "NEWBIE",
-    repo: "https://github.com/Hilverton/frontend-mentor/tree/main/single-price-grid-component-master",
+    repo: "https://github.com/Hilverton/frontend-mentor/tree/main/challenges/single-price-grid-component-master",
   },
   {
     alt: "Huddle landing page image",
@@ -24,7 +24,7 @@ const projects = [
       "Your challenge is to build out this landing page from the designs provided in the starter code.",
     path: "huddle-landing-page-master",
     level: "NEWBIE",
-    repo: "https://github.com/Hilverton/frontend-mentor/tree/main/huddle-landing-page-master",
+    repo: "https://github.com/Hilverton/frontend-mentor/tree/main/challenges/huddle-landing-page-master",
   },
 ];
 
@@ -39,7 +39,7 @@ projects.forEach((project) => {
       <img
         alt="${project.alt}"
         class="absolute inset-0 w-full h-full object-cover object-center"
-        src="./${project.path}/design/desktop-preview.jpg"
+        src="./challenges/${project.path}/design/desktop-preview.jpg"
       />
       <div
         class="px-8 py-6 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
@@ -57,7 +57,7 @@ projects.forEach((project) => {
         </p>
         <div class="flex items-center flex-wrap pt-2">
           <a
-            href="./${project.path}/index.html"
+            href="./challenges/${project.path}/index.html"
             target="__blank"
             class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"
           >
