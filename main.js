@@ -44,6 +44,15 @@ const projects = [
     level: "NEWBIE",
     repo: "https://github.com/Hilverton/frontend-mentor/tree/main/challenges/four-card-feature-section-master",
   },
+  {
+    alt: "Order summary component image",
+    title: "Order summary component",
+    description:
+      "Your challenge is to build out this order summary card component and get it looking as close to the design as possible.",
+    path: "order-summary-component-main",
+    level: "NEWBIE",
+    repo: "https://github.com/Hilverton/frontend-mentor/tree/main/challenges/order-summary-component-main",
+  },
 ];
 
 const list = document.getElementById("list");
