@@ -27,7 +27,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-image: url(./images/pattern-background-mobile.svg);
+  background-image: url("./images/pattern-background-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-color: var(--pale-blue);
@@ -176,7 +176,7 @@ img {
 
 @media screen and (min-width: 500px) {
   body {
-    background-image: url(/images/pattern-background-desktop.svg);
+    background-image: url("./images/pattern-background-desktop.svg");
   }
 
   .card {
