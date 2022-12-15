@@ -53,6 +53,15 @@ const projects = [
     level: "NEWBIE",
     repo: "https://github.com/Hilverton/frontend-mentor/tree/main/challenges/order-summary-component-main",
   },
+  {
+    alt: "QR code component image",
+    title: "QR code component",
+    description:
+      "Your challenge is to build out this QR code component and get it looking as close to the design as possible.",
+    path: "qr-code-component-main",
+    level: "NEWBIE",
+    repo: "https://github.com/Hilverton/frontend-mentor/tree/main/challenges/qr-code-component-main",
+  },
 ];
 
 const list = document.getElementById("list");
